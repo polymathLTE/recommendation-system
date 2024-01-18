@@ -90,7 +90,7 @@ export function recommender(myObject) {
     
     // convert outputs to string
     let dominant_styles = Object.values(dominantStylesObject);
-    dominant_styles = dominant_styles.join('-->');
+    dominant_styles = dominant_styles.join('---');
     recommend_activity = recommend_activity.join(', ');
     recommend_statemnt = recommend_statemnt.join(', ');
     
