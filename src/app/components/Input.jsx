@@ -4,38 +4,33 @@ import React from 'react'
 import Section from './Section'
 import Fieldset from './Fieldset'
 import { recommender } from '../recommender'
+import { useAppContext } from '../context'
 
 export default function Input() {
+    const { setRecommendation, setModal } = useAppContext()
+
     const perception = []
     const input = []
     const processing = []
     const understanding = []
 
-    function onsubmit() {
-        console.log({
+    function onsubmit(e) {
+        e.preventDefault()
+
+        setRecommendation(recommender({
             perception: perception,
             input: input,
             processing: processing,
             understanding: understanding
-        })
-
-        // console.log(recommender({
-        //     perception: perception,
-        //     input: input,
-        //     processing: processing,
-        //     understanding: understanding
-        // }))
-
-        recommender({
-            perception: perception,
-            input: input,
-            processing: processing,
-            understanding: understanding
-        })
+        }))
+        setModal(true)
     }
 
     return (
-        <div className='p-5 bg-slate-300'>
+        <form
+            className='p-5 bg-slate-300'
+            onSubmit={onsubmit}
+        >
             <Section border={true}>
                 <p className='text-[#202124] text-3xl leading-normal'>
                     Questionnaire for Felder and silvermann learning model classification
@@ -86,6 +81,7 @@ export default function Input() {
                     onchange={(value) => processing.push(value)}
                 />
             </Section>
+
             {/* Input */}
             <Section>
                 <Fieldset
@@ -115,6 +111,8 @@ export default function Input() {
                     onchange={(value) => perception.push(value)}
                 />
             </Section>
+
+            {/*  */}
             <Section>
                 <Fieldset
                     question={'When learning new information, do you find it more helpful to see:'}
@@ -157,6 +155,8 @@ export default function Input() {
                     onchange={(value) => input.push(value)}
                 />
             </Section>
+
+            {/*  */}
             <Section>
                 <Fieldset
                     question={'Do you prefer to learn information:'}
@@ -202,12 +202,12 @@ export default function Input() {
 
             <div className='mt-5 mx-auto w-[640px] max-w-full'>
                 <button
+                    type='submit'
                     className='rounded-lg px-6 py-3 bg-slate-700 text-white'
-                    onClick={() => onsubmit()}
                 >
                     Submit
                 </button>
             </div>
-        </div>
+        </form>
     )
 }

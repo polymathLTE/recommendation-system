@@ -8,17 +8,31 @@ export default function Fieldset({ question, name, input1Id, input1Value, label1
                 {question}
             </legend>
             <div className='ms-1 mt-4 flex place-items-center gap-3'>
-                <input type="radio" name={name} id={input1Id} value={input1Value} onChange={(e) => {
-                    onchange(e.target.value)
-                }} />
+                <input
+                    type="radio"
+                    name={name}
+                    id={input1Id}
+                    value={input1Value}
+                    onChange={(e) => {
+                        onchange(e.target.value)
+                    }}
+                    required
+                />
                 <label htmlFor={input1Id}>
                     {label1}
                 </label>
             </div>
             <div className='ms-1 mt-2 flex place-items-center gap-3'>
-                <input type="radio" name={name} id={input2Id} value={input2Value} onChange={(e) => {
-                    onchange(e.target.value)
-                }} />
+                <input
+                    type="radio"
+                    name={name}
+                    id={input2Id}
+                    value={input2Value}
+                    onChange={(e) => {
+                        onchange(e.target.value)
+                    }}
+                    required
+                />
                 <label htmlFor={input2Id}>
                     {label2}
                 </label>
