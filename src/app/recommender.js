@@ -88,9 +88,11 @@ export function recommender(myObject) {
     recommend_statemnt.push(learningModelRecommendations[dominantStylesObject.processing]['Recommendation']);
     recommend_statemnt.push(learningModelRecommendations[dominantStylesObject.understanding]['Recommendation']);
     
-    // convert both ro string
+    // convert outputs to string
+    let dominant_styles = Object.values(dominantStylesObject);
+    dominant_styles = dominant_styles.join('-->');
     recommend_activity = recommend_activity.join(', ');
     recommend_statemnt = recommend_statemnt.join(', ');
     
-    return [recommend_activity, recommend_statemnt];    
+    return [dominant_styles, recommend_activity, recommend_statemnt];    
 }
