@@ -37,9 +37,10 @@ const learningModelRecommendations = {
 function getDominantLearningStyles(inputObject) {
     // Define a result object to store the dominant styles
     const result = {};
+    const keyOrder = ['input', 'perception', 'processing', 'understanding'];
 
-    // Loop through each category in the input object
-    for (const category in inputObject) {
+    // Loop through each category in the input object based on the specified key order
+    keyOrder.forEach(category => {
         // Get the learning styles array for the current category
         const learningStyles = inputObject[category];
 
@@ -63,13 +64,12 @@ function getDominantLearningStyles(inputObject) {
 
         // Assign the dominant learning style to the result object
         result[category] = dominantStyle;
-    }
+    });
 
     return result;
 }
 
-
-// exposed recommender function]
+// exposed recommender function
 export function recommender(myObject) {
     // get the learning styles from myObject
     const dominantStylesObject = getDominantLearningStyles(myObject);
@@ -88,9 +88,11 @@ export function recommender(myObject) {
     recommend_statemnt.push(learningModelRecommendations[dominantStylesObject.processing]['Recommendation']);
     recommend_statemnt.push(learningModelRecommendations[dominantStylesObject.understanding]['Recommendation']);
     
-    // convert both ro string
+    // convert outputs to string
+    let dominant_styles = Object.values(dominantStylesObject);
+    dominant_styles = dominant_styles.join(' --- ');
     recommend_activity = recommend_activity.join(', ');
     recommend_statemnt = recommend_statemnt.join(', ');
     
-    return [recommend_activity, recommend_statemnt];    
+    return [dominant_styles, recommend_activity, recommend_statemnt];    
 }
