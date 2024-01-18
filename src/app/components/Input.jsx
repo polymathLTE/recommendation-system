@@ -3,6 +3,7 @@
 import React from 'react'
 import Section from './Section'
 import Fieldset from './Fieldset'
+import { recommender } from '../recommender'
 
 export default function Input() {
     const perception = []
@@ -12,6 +13,20 @@ export default function Input() {
 
     function onsubmit() {
         console.log({
+            perception: perception,
+            input: input,
+            processing: processing,
+            understanding: understanding
+        })
+
+        // console.log(recommender({
+        //     perception: perception,
+        //     input: input,
+        //     processing: processing,
+        //     understanding: understanding
+        // }))
+
+        recommender({
             perception: perception,
             input: input,
             processing: processing,
