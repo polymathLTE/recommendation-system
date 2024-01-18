@@ -22,3 +22,9 @@ let myObject = {
         "sequential"
     ]
 };
+
+its return is a list with two elements with index[0,1]
+0 - recommend_activity
+1 - recommend_statemnt
+
+the reponse should be displayed to the user after the form is submitted and processed
