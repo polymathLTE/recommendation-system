@@ -92,5 +92,5 @@ export function recommender(myObject) {
     recommend_activity = recommend_activity.join(', ');
     recommend_statemnt = recommend_statemnt.join(', ');
     
-    return recommend_activity, recommend_statemnt;    
+    return [recommend_activity, recommend_statemnt];    
 }
