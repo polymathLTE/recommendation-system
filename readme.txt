@@ -29,3 +29,11 @@ its return is a list with two elements with index[0,1]
 2 - recommend_statemnt
 
 the reponse should be displayed to the user after the form is submitted and processed
+
+// MISSING QUESTION IN SURVEY - position 4
+When solving problems, do you tend to rely more on:
+Facts and practical experience (sensing).
+Creative insights and possibilities (intuitive).
+
+// feedback form link
+https://cpnjw9a6pf6.typeform.com/to/TbExAns9

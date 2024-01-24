@@ -1,3 +1,4 @@
+// contains learning recommendations and suggested activity
 const learningModelRecommendations = {
     active: {
         'Recommendation': 'Engage in hands-on activities, group discussions, or experiments to enhance your understanding',
