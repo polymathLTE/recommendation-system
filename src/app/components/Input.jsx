@@ -87,8 +87,8 @@ export default function Input() {
             <Section>
                 <Fieldset
                     question={'When solving problems, do you tend to rely more on'}
-                    name={"perception4"}
-                    input1Id={"perception4_sensing"}
+                    name={"perception12"}
+                    input1Id={"perception12_sensing"}
                     input1Value={"sensing"}
                     label1={"Facts and pratical experience (sensing)."}
 
