@@ -31,6 +31,7 @@ export default function Input() {
             className='p-5 bg-slate-300'
             onSubmit={onsubmit}
         >
+
             <Section border={true}>
                 <p className='text-[#202124] text-3xl leading-normal'>
                     Questionnaire for Felder and silvermann learning model classification
@@ -85,6 +86,20 @@ export default function Input() {
             {/* Input */}
             <Section>
                 <Fieldset
+                    question={'When solving problems, do you tend to rely more on'}
+                    name={"perception4"}
+                    input1Id={"perception4_sensing"}
+                    input1Value={"sensing"}
+                    label1={"Facts and pratical experience (sensing)."}
+
+                    input2Id={"perception4_intuitive"}
+                    input2Value={"intuitive"}
+                    label2={"Creative insights and possibilities (intuitive)."}
+                    onchange={(value) => perception.push(value)}
+                />
+            </Section>
+            <Section>
+                <Fieldset
                     question={'When presented with a problem, do you tend to approach it by focusing on:'}
                     name={"perception4"}
                     input1Id={"perception4_sensing"}
@@ -112,7 +127,7 @@ export default function Input() {
                 />
             </Section>
 
-            {/*  */}
+            {/* Processing */}
             <Section>
                 <Fieldset
                     question={'When learning new information, do you find it more helpful to see:'}
@@ -156,7 +171,7 @@ export default function Input() {
                 />
             </Section>
 
-            {/*  */}
+            {/* Understanding */}
             <Section>
                 <Fieldset
                     question={'Do you prefer to learn information:'}
