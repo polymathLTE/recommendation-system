@@ -45,11 +45,11 @@ export default function Input() {
                     name={"perception1"}
                     input1Id={"perception1_active"}
                     input1Value={"active"}
-                    label1={"Experimenting with it hands-on (active)."}
+                    label1={"Experimenting with it hands-on ."}
 
                     input2Id={"perception1_reflective"}
                     input2Value={"reflective"}
-                    label2={"Reflecting on it before taking action (reflective)."}
+                    label2={"Reflecting on it before taking action ."}
                     onchange={(value) => processing.push(value)}
                     perception={perception}
                 />
@@ -60,11 +60,11 @@ export default function Input() {
                     name={"perception2"}
                     input1Id={"perception2_active"}
                     input1Value={"active"}
-                    label1={"Taking an active role in discussions and decision-making (active)."}
+                    label1={"Taking an active role in discussions and decision-making ."}
 
                     input2Id={"perception2_reflective"}
                     input2Value={"reflective"}
-                    label2={"Observing and thinking before participating (reflective)."}
+                    label2={"Observing and thinking before participating ."}
                     onchange={(value) => processing.push(value)}
                 />
             </Section>
@@ -74,11 +74,11 @@ export default function Input() {
                     name={"perception3"}
                     input1Id={"perception3_active"}
                     input1Value={"active"}
-                    label1={"Engaging in discussions and group activities (active)."}
+                    label1={"Engaging in discussions and group activities ."}
 
                     input2Id={"perception3_reflective"}
                     input2Value={"reflective"}
-                    label2={"Spending time reflecting on the material independently (reflective)."}
+                    label2={"Spending time reflecting on the material independently ."}
                     onchange={(value) => processing.push(value)}
                 />
             </Section>
@@ -90,11 +90,11 @@ export default function Input() {
                     name={"perception12"}
                     input1Id={"perception12_sensing"}
                     input1Value={"sensing"}
-                    label1={"Facts and pratical experience (sensing)."}
+                    label1={"Facts and pratical experience ."}
 
                     input2Id={"perception4_intuitive"}
                     input2Value={"intuitive"}
-                    label2={"Creative insights and possibilities (intuitive)."}
+                    label2={"Creative insights and possibilities."}
                     onchange={(value) => perception.push(value)}
                 />
             </Section>
@@ -104,11 +104,11 @@ export default function Input() {
                     name={"perception4"}
                     input1Id={"perception4_sensing"}
                     input1Value={"sensing"}
-                    label1={"The details and practical aspects (sensing)."}
+                    label1={"The details and practical aspects ."}
 
                     input2Id={"perception4_intuitive"}
                     input2Value={"intuitive"}
-                    label2={"Abstract concepts and possibilities (intuitive)."}
+                    label2={"Abstract concepts and possibilities."}
                     onchange={(value) => perception.push(value)}
                 />
             </Section>
@@ -118,11 +118,11 @@ export default function Input() {
                     name={"perception5"}
                     input1Id={"perception5_sensing"}
                     input1Value={"sensing"}
-                    label1={"Practical applications and real-world examples (sensing)."}
+                    label1={"Practical applications and real-world examples ."}
 
                     input2Id={"perception5_intuitive"}
                     input2Value={"intuitive"}
-                    label2={"Theoretical concepts and possibilities (intuitive)."}
+                    label2={"Theoretical concepts and possibilities."}
                     onchange={(value) => perception.push(value)}
                 />
             </Section>
@@ -134,11 +134,11 @@ export default function Input() {
                     name={"perception6"}
                     input1Id={"perception6_visual"}
                     input1Value={"visual"}
-                    label1={"Visual representations (charts, graphs) (visual)."}
+                    label1={"Visual representations (charts, graphs)."}
 
                     input2Id={"perception6_verbal"}
                     input2Value={"verbal"}
-                    label2={"Read and hear verbal explanations (verbal)."}
+                    label2={"Read and hear verbal explanations."}
                     onchange={(value) => input.push(value)}
                 />
             </Section>
@@ -148,11 +148,11 @@ export default function Input() {
                     name={"perception7"}
                     input1Id={"perception7_visual"}
                     input1Value={"visual"}
-                    label1={"Diagrams, charts, or mind maps (visual)."}
+                    label1={"Diagrams, charts, or mind maps."}
 
                     input2Id={"perception7_verbal"}
                     input2Value={"verbal"}
-                    label2={"Reading and summarizing information in your own words (verbal)."}
+                    label2={"Reading and summarizing information in your own words."}
                     onchange={(value) => input.push(value)}
                 />
             </Section>
@@ -162,11 +162,11 @@ export default function Input() {
                     name={"perception8"}
                     input1Id={"perception8_visual"}
                     input1Value={"visual"}
-                    label1={"Visual aids and diagrams (visual)."}
+                    label1={"Visual aids and diagrams."}
 
                     input2Id={"perception8_verbal"}
                     input2Value={"verbal"}
-                    label2={"Articulate your thoughts verbally and provide detailed explanations (verbal)."}
+                    label2={"Articulate your thoughts verbally and provide detailed explanations."}
                     onchange={(value) => input.push(value)}
                 />
             </Section>
@@ -178,11 +178,11 @@ export default function Input() {
                     name={"perception9"}
                     input1Id={"perception9_sequential"}
                     input1Value={"sequential"}
-                    label1={"Step by step in a logical order (sequential)."}
+                    label1={"Step by step in a logical order."}
 
                     input2Id={"perception9_global"}
                     input2Value={"global"}
-                    label2={"By making connections between different concepts (global)."}
+                    label2={"By making connections between different concepts."}
                     onchange={(value) => understanding.push(value)}
                 />
             </Section>
@@ -192,11 +192,11 @@ export default function Input() {
                     name={"perception10"}
                     input1Id={"perception10_sequential"}
                     input1Value={"sequential"}
-                    label1={"Break it down into smaller, manageable steps (sequential)."}
+                    label1={"Break it down into smaller, manageable steps."}
 
                     input2Id={"perception10_global"}
                     input2Value={"global"}
-                    label2={"Look at the big picture and understand the overall concept first (global)."}
+                    label2={"Look at the big picture and understand the overall concept first."}
                     onchange={(value) => understanding.push(value)}
                 />
             </Section>
@@ -206,11 +206,11 @@ export default function Input() {
                     name={"perception11"}
                     input1Id={"perception11_sequential"}
                     input1Value={"sequential"}
-                    label1={"Following a structured plan and completing tasks in a linear fashion (sequential)."}
+                    label1={"Following a structured plan and completing tasks in a linear fashion."}
 
                     input2Id={"perception11_global"}
                     input2Value={"global"}
-                    label2={"Adapting to changes and approaching tasks with flexibility (global)."}
+                    label2={"Adapting to changes and approaching tasks with flexibility."}
                     onchange={(value) => understanding.push(value)}
                 />
             </Section>
