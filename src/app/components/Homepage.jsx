@@ -9,12 +9,12 @@ export default function Homepage() {
                 <h1 className='text-3xl'>
                     Federal University of Technology, Akure
                 </h1>
-                <h className='text-3xl'>
+                <h2 className='text-3xl'>
                     Center For Entrepreneurship (CENT)
-                </h1>
-                <h1 className='text-3xl'>
+                </h2>
+                <h2 className='text-3xl'>
                     FUTA Learning Improvement System
-                </h1>
+                </h2>
                 <h3 className='text-2xl'>
                     To assess individual learning preferences across various dimensions
                 </h3>
