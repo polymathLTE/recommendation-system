@@ -22,7 +22,7 @@ export default function Homepage() {
                 <h3 className='text-2xl'>
                     Supervised By
                 </h3>
-                <h3 className='text-2x1'>
+                <h3 className='text-2xl'>
                     Mr. Ogunbodede
                 </h3>
                 <h3 className='text-2xl'>
