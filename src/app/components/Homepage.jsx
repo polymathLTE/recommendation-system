@@ -6,7 +6,7 @@ export default function Homepage() {
     return (
         <div className='flex min-h-screen h-full place-items-center'>
             <div className='p-5 w-[640px] max-w-full mx-auto text-center grid gap-7'>
-                <h1 className='text-3xl'>
+                <h1 className='text-4xl'>
                     Federal University of Technology, Akure
                 </h1>
                 <h2 className='text-3xl'>
