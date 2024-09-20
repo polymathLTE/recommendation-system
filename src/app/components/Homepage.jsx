@@ -7,17 +7,19 @@ export default function Homepage() {
         <div className='flex min-h-screen h-full place-items-center'>
             <div className='p-5 w-[640px] max-w-full mx-auto text-center grid gap-7'>
                 <h1 className='text-3xl'>
+                    Federal University of Technology, Akure
+                </h1>
+                <h className='text-3xl'>
+                    Center For Entrepreneurship (CENT)
+                </h1>
+                <h1 className='text-3xl'>
                     FUTA Learning Improvement System
                 </h1>
-
                 <h3 className='text-2xl'>
                     To assess individual learning preferences across various dimensions
                 </h3>
                 <h3 className='text-2xl'>
-                    By Computer Applications 
-                </h3>
-                <h3 className='text-2xl'>
-                    ENT GROUP
+                    ENT Trade: Computer Applications 
                 </h3>
                 <h3 className='text-2xl'>
                     Supervised By
