@@ -7,7 +7,7 @@ export default function Homepage() {
         <div className='flex min-h-screen h-full place-items-center'>
             <div className='p-5 w-[640px] max-w-full mx-auto text-center grid gap-7'>
                 <h1 className='text-3xl'>
-                    Felder and silvermann learning model classification
+                    FUTA Learning Improvement System
                 </h1>
 
                 <h3 className='text-2xl'>
